@@ -1,7 +1,8 @@
-myapp = {};
+ilanguage = {};
 
-myapp.Greeter = function() { };
+ilanguage.Tokenizer = function() { };
 
-myapp.Greeter.prototype.greet = function(name) {
-  return "Hello " + name + "!";
+ilanguage.Tokenizer.prototype.findSegmenter = function(corpus) {
+  
+  return  " ";
 };
