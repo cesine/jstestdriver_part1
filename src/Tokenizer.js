@@ -18,7 +18,7 @@ ilanguage.Tokenizer.prototype.findSegmenter = function(corpus) {
   var mostFrequentChar = " ";
   for (i in frequencies ){
     if(frequencies[i] > mostFrequentCharCount){
-      mostFrequentCharCount= frequencies[i];
+      mostFrequentCharCount = frequencies[i];
       mostFrequentChar = i;
     }
   }

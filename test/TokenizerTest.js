@@ -1,6 +1,10 @@
 TestCase("TokenizerTest", {
-    "test find segmentation segment for English": function() {
+   "test find segmentation segment for English": function() {
         var tokenizer = new ilanguage.Tokenizer();
         assertEquals(" ", tokenizer.findSegmenter("This isn't much of a corpus to check in."));
+    },
+  "test find segmentation segment for Passamaquoddy": function() {
+        var tokenizer = new ilanguage.Tokenizer();
+        assertEquals(" ", tokenizer.findSegmenter("Well, píhc… píhce nìt k4màc léyu.  Nòt, nòt Kíwhòsßwasq tàn elapéksit.  Kákehsìk4ton kìs níta, p4mawsúwinúwok wikúltihtìt skicinúwok. 2.	Eci-yaq w4línáqok eyultíhtit.  Tàn-te wíkultíhtit sípuhs pemíyak.  Nìt éhetßwì-yaq wíkßwámol éltek skícinúwok, wikultíhtit. 3.	Eci-w4litahasultíhtit.  Psì kéqsèy mokéhtehmòn0ya, wíyuhs.  Nìt et4li-nehpa… nehpáhtahtíhtit nìt ’qocípun.  Naka túcì psì, psì éhta-te kéqsèy mískot. 4.	Sés4láhki-yaq-te 0yèy, mace-ksinukhòtßwok, skicinúwok, wasísok, kci-p4mawsuwinúwok, psì éhta-te wèn.  Psì-yaq-te wèn ksinúhka.  Nìt-te wèn més4nòk níta, ánqoc-te mahk0yéwiwòss téhpu kìs mehcin0yà. 5.	Boys, ass… assokitahásultúwok-yaq, yùkt skicinúwok, kèq weci nìt li-mehcinhotíhtit.  Mílíkon-yaq ’písun, eqetápet4múhtit yùt yálíkok khàk4nok, khàk4nok.  Psìw, ’toqetápet4mòn0ya.  K4táma-te kéqsèy ’toli-w4lehlokùn0ya. 6.	Malom-yaq-te wòt skítàp, etucí-ksinúhkat élóssik s4láhki-yaq ápqotéssik 0yèy, yùt kpoték4políkon íyok, masqewihkánok.  Sakha…  Sákhúhset-yaq ktaqhómuhs.  Kàt qìn-yaq-na nok4mokilù.  Nékèt-yaq ìp4col skícinúwok nékèt nok4mokilultúwok.  Wòt-yaq cèl ’tássokìnßwal, elkílsossílit skítapíyol kessahalícil. 7.	’Tíyal-yaq \"K4màc kósinùhk nitàp?\" 8.	’Tíyal-yaq, \"Ahà, k4màc nkosinùhk.  Kéhsultíhtit-na skícinúwok kesinukhotícik.  K4táma-te nkocicihtúw4newìn tàn ntollukhotinèn.  Ehtahsi-kiskáhkiwìk-te p4mi-mehcinhòtßwok wasísok, psì éhta-te wèn, kci-p4mawsuwinúwok.\" 9.	’Tíyal-yaq \"T4kèc éhta nìl 0yèy, kpeci-nsótuhmúlon, ’písun nìt eli-kòlßwahk.\" 10.	’Tíyal-yaq \"Wèn kíla?\" 11.	 ’Tíyal-yaq \"Nìl éhta nìt elíwihímok Kiwhòsßwasq.\"  ’Tíyal, ’tíyal-yaq \"Nìt, nìt…  T4kèc nìl, qetápem0yèq, psì-te-hc kmewiyáwultípa tàn wèn, késkuhtéhkok yùt ’písun.\" "));
     }
 });
